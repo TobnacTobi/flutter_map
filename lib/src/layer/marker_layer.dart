@@ -80,12 +80,14 @@ class Marker {
   final double width;
   final double height;
   final Anchor anchor;
+  final dynamic data;
 
   Marker({
     this.point,
     this.builder,
     this.width = 30.0,
     this.height = 30.0,
+    this.data = null,
     AnchorPos anchorPos,
   }) : anchor = Anchor.forPos(anchorPos, width, height);
 }
